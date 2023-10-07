@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menuTKDT" type="id" />
+    <item name="menuKTDS" type="id"/>
+</resources>

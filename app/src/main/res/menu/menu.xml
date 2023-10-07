@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuQLTV"
+        android:title="Quản lý thành viên"
+        android:icon="@drawable/img_4"/>
+
+    <item android:id="@+id/menuQLLS"
+        android:title="Quản lý loại sách"
+        android:icon="@drawable/cil_book"/>
+    <item android:id="@+id/menuQLS"
+        android:title="Quản lý sách"
+        android:icon="@drawable/octicon_book_16"/>
+
+    <item android:id="@+id/menuQLPM"
+        android:title="Quản lý phiếu mượn"
+        android:icon="@drawable/vector"/>
+
+       <item android:id="@+id/menuTKDS"
+           android:title="Thông kê doanh số"
+           android:icon="@drawable/icon_park_outline_sales_report"/>
+       <item android:id="@+id/menutop"
+           android:title="Top 10 sáng mượn nhiều nhât"
+           android:icon="@drawable/fluent_book_coins_20_filled"/>
+    <item android:id="@+id/menudangxuat"
+        android:title="Đăng xuất"
+        android:icon="@drawable/dang_xuat"/>
+
+</menu>
