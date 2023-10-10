@@ -16,7 +16,6 @@
             android:id="@+id/imgUsename"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/khung_usename"
             android:padding="2dp"
             android:scaleType="fitXY"/>
 
