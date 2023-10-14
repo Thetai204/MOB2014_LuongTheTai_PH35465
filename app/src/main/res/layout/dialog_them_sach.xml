@@ -25,7 +25,9 @@
             android:text="Thêm Sách"
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            />
 
         <EditText
             android:id="@+id/txtMaSach"
@@ -45,7 +47,6 @@
             android:layout_marginVertical="5dp"
             android:background="@drawable/khung_input_login"
             android:hint="Tên Sách"
-            android:inputType="number"
             android:paddingHorizontal="15dp" />
 
         <EditText
@@ -55,15 +56,11 @@
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="5dp"
             android:background="@drawable/khung_input_login"
-            android:clickable="false"
-            android:cursorVisible="false"
-
-            android:focusable="false"
             android:hint="Giá Thuê"
-            android:inputType="none"
+            android:inputType="number"
             android:paddingHorizontal="15dp" />
-        <EditText
-            android:id="@+id/txtLoaiSach"
+        <Spinner
+            android:id="@+id/sp_LoaiSach"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginHorizontal="30dp"

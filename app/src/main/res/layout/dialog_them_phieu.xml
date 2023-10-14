@@ -25,7 +25,9 @@
             android:text="Thêm phiếu"
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            />
 
         <EditText
             android:id="@+id/txtMaphieu"
@@ -73,12 +75,16 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:id="@+id/sp_loaisach"
+            android:id="@+id/sp_thanhvien"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="5dp"
             />
 
-
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Trả sách"
+    android:id="@+id/cbk_tra"/>
 
         <LinearLayout
             android:layout_width="match_parent"

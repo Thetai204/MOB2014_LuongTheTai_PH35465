@@ -25,31 +25,31 @@
             android:text="Thêm loại sách"
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            />
 
         <EditText
-            android:id="@+id/txtMaloai"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="5dp"
-            android:background="@drawable/khung_input_login"
-            android:hint="Mã loại sách"
-            android:paddingHorizontal="15dp" />
-
-        <EditText
-            android:id="@+id/txtTenloai"
+            android:id="@+id/txtTenloai_loai"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="5dp"
             android:background="@drawable/khung_input_login"
             android:hint="Tên loại Sách"
-            android:inputType="number"
+
             android:paddingHorizontal="15dp" />
 
-
-
+        <EditText
+            android:id="@+id/txtMaloai_loai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/khung_input_login"
+            android:hint="Mã loại sách"
+            android:inputType="number"
+            android:paddingHorizontal="15dp" />
 
 
         <LinearLayout

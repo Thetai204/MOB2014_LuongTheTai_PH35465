@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper {
     static final String dbName = "PNLIB";
-    static final int dbVersion = 1;
+    static final int dbVersion = 3;
 
     public DbHelper(Context context) {
         super(context, dbName, null, dbVersion);
@@ -40,7 +40,8 @@ public class DbHelper extends SQLiteOpenHelper {
                         "maTV INTEGER NOT NULL, " +
                         "maSach INTEGER NOT NULL, " +
                         "ngay DATE NOT NULL, " +
-                        "tienThue INTEGER NOT NULL);" ;
+                        "tienThue INTEGER NOT NULL," +
+                        "traSach INTEGER NOT NULL);" ;
         db.execSQL(createTablePhieuMuon);
 
         //Tao bang Sach
@@ -49,8 +50,8 @@ public class DbHelper extends SQLiteOpenHelper {
                         "maSach INTEGER PRIMARY KEY AUTOINCREMENT, " +
                         "tenSach TEXT NOT NULL, " +
                         "giaThue INTEGER NOT NULL, " +
-                        "maLoai INTEGER NOT NULL," +
-                        "nam INTEGER NOT NULL)";
+                        "maLoai INTEGER NOT NULL)"
+                        ;
         db.execSQL(createTableSach);
 
         //Tao bang Loai Sach
@@ -75,11 +76,11 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL(add_loaiSach);
 
         String add_sach = "INSERT INTO Sach VALUES" +
-                "(0,'Lập trình Javascrip Cơ bản',5000,0,2023)," +
-                "(1,'Lập trình Javascrip Nâng cao',7000,0,2023)," +
-                "(2,'Công nghệ tương lai',10000,0,2023)," +
-                "(3,'Tri thức về vạn vật',5000,4,2023)," +
-                "(4,'Lịch sử khoa học',5000,4,2023)";
+                "(0,'Lập trình Javascrip Cơ bản',5000,0)," +
+                "(1,'Lập trình Javascrip Nâng cao',7000,0)," +
+                "(2,'Công nghệ tương lai',10000,0)," +
+                "(3,'Tri thức về vạn vật',5000,4)," +
+                "(4,'Lịch sử khoa học',5000,4)";
         db.execSQL(add_sach);
 
         String add_thanhvien = "INSERT INTO ThanhVien VALUES" +

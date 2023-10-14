@@ -46,6 +46,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/bikini"
         android:layout_gravity="center"
-        android:id="@+id/ibtn_xoaThanhvien"/>
+        android:id="@+id/ibtn_xoaSach"/>
 </LinearLayout>
 </androidx.cardview.widget.CardView>

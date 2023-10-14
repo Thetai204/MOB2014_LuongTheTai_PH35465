@@ -21,6 +21,12 @@
        <item android:id="@+id/menutop"
            android:title="Top 10 sáng mượn nhiều nhât"
            android:icon="@drawable/fluent_book_coins_20_filled"/>
+    <item android:id="@+id/menuthemThanhvien"
+        android:title="Thêm thành viên"
+        android:icon="@drawable/fluent_book_coins_20_filled"/>
+    <item android:id="@+id/menudoiMK"
+        android:title="Top 10 sáng mượn nhiều nhât"
+        android:icon="@drawable/fluent_book_coins_20_filled"/>
     <item android:id="@+id/menudangxuat"
         android:title="Đăng xuất"
         android:icon="@drawable/dang_xuat"/>

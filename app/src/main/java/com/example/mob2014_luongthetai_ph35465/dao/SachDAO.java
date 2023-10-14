@@ -24,7 +24,7 @@ public class SachDAO {
         contentValues.put("tenSach",obj.getTenSach());
         contentValues.put("giaThue",obj.getGiaThue());
         contentValues.put("maLoai",obj.getMaLoai());
-        contentValues.put("nam",obj.getNam());
+
 
 
         return db.insert("Sach",null,contentValues);
@@ -35,7 +35,7 @@ public class SachDAO {
         contentValues.put("tenSach",obj.getTenSach());
         contentValues.put("giaThue",obj.getGiaThue());
         contentValues.put("maLoai",obj.getMaLoai());
-        contentValues.put("nam",obj.getNam());
+
         return db.update("Sach",contentValues,"maSach = ?",new String[]{String.valueOf(obj.getMaSach())});
     }
 
@@ -50,10 +50,8 @@ public class SachDAO {
             lstSach.add(new Sach(
                     Integer.parseInt(cursor.getString(0)),
                     cursor.getString(1),
-                    Integer.parseInt(cursor.getString(2)),
-                    Integer.parseInt(cursor.getString(3)),
-                    cursor.getInt(4)
-
+                    cursor.getInt(2),
+                    cursor.getInt(3)
             ));
         }
         return lstSach;

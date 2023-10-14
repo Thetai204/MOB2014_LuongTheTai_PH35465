@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/bikini"
-            android:id="@+id/ibtn_xoaThanhvien"/>
+            android:id="@+id/ibtn_xoaphie"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
