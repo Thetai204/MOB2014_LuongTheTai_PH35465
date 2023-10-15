@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(new Top10Fragment());
                         mCurrentFragment = FRAGMENT_TOP10;
                     }
-                } else if (item.getItemId() == R.id.menuTKDT) {
+                } else if (item.getItemId() == R.id.menuTKDS) {
                     toolbar.setTitle(title[5]);
                     if (mCurrentFragment != FRAGMENT_DOANHTHU) {
                         replaceFragment(new DoanhThuFragment());
@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(new DoiMatKhauFragment());
                         mCurrentFragment = FRAGMENT_DOIMATKHAU;
                     }
+
                 } else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("Bạn có chắc chắn muốn đăng xuất tài khoản này không ?");

@@ -25,8 +25,6 @@ public class SachDAO {
         contentValues.put("giaThue",obj.getGiaThue());
         contentValues.put("maLoai",obj.getMaLoai());
 
-
-
         return db.insert("Sach",null,contentValues);
     }
 
